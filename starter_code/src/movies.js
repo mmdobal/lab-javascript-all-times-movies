@@ -2030,7 +2030,7 @@ function ratesAverage(array) {
 // Get the average of Drama Movies
 
 function dramaMoviesRate (movies) {
-    let dramaMovie = movies.filter(function(item){
+    let dramaMovie = movies.filter(function(item) {
        return item.genre.indexOf('Drama') !== -1;
          });
          if (dramaMovie.length < 1){
@@ -2044,15 +2044,16 @@ function dramaMoviesRate (movies) {
 
 // How many movies did STEVEN SPIELBERG
 function howManyMovies (movies) {
-    if (movies.length === 0)
-      return undefined;
+    if (movies.length === 0){
+      return undefined;}
       else
-    let stevenMovie = movies.filter(function(item){
+    {let spielbergMovie = movies.filter(function(item){
       return item.genre.indexOf('Drama') !== -1
-      && item.director.indexOf('Steven Spielberg') !== -1
+      && item.director.indexOf('Steven Spielberg') !== -1;
         });
-          return "Steven Spielberg directed "+ stevenMovie.length +" drama movies!";
+          return "Steven Spielberg directed "+ spielbergMovie.length +" drama movies!";
        }
+    }
 
 
 // Order by title and print the first 20 titles
