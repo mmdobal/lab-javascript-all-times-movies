@@ -2047,7 +2047,7 @@ function howManyMovies (movies) {
     if (movies.length === 0)
       return undefined;
       else
-    var stevenMovie = movies.filter(function(item){
+    let stevenMovie = movies.filter(function(item){
       return item.genre.indexOf('Drama') !== -1
       && item.director.indexOf('Steven Spielberg') !== -1
         });
